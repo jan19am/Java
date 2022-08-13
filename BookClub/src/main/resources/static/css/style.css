@@ -1,0 +1,123 @@
+.book-club {
+	color: rgb(153, 0, 255);
+}
+
+.index-title {
+	margin-bottom: 40px;
+}
+
+input, textarea {
+	border: 2px solid black;
+}
+
+.body {
+	display: flex;
+	justify-content: center;
+}
+
+.form-rows {
+	margin-bottom: 20px;
+}
+
+.submit {
+	background-color: white;
+	border: 1px solid;
+	box-shadow: 3px 3px;
+}
+
+.sub-button {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.registration {
+	margin-right: 50px;
+}
+
+.labelgroup {
+	width: 100px;
+}
+
+.books-wrapper {
+	margin: 20px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.rightHeader {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+
+.booklinks {
+	margin-bottom: 10px;
+}
+
+#tableheader {
+	background-color: #cccccc;
+}
+
+td, th {
+		border: 2px solid black;
+		text-align: center;
+}
+
+tr:nth-child(even) {
+	background-color: #eeeeee;
+}
+
+/* addbook jsp */
+.addbook-wrapper {
+	margin: 20px;
+}
+
+.addbook-title {
+	display: flex;
+	justify-content: space-between;
+}
+
+.inputs, .inputs-textarea {
+	width: 400px;
+}
+
+.addbook-button {
+	display: flex;
+	width: 500px;
+	justify-content: flex-end;
+}
+
+.inputs-textarea {
+	vertical-align: top;
+}
+
+/* book-details jsp */
+
+.wrapper {
+	margin: 40px;
+}
+
+.book-user {
+	color: red;
+}
+
+.book-title {
+	color: rgb(153, 0, 255);
+}
+
+.book-author {
+	color: #009d10;
+}
+
+.lowerBody {
+	margin-top: 30px;
+	padding: 20px 0;
+	width: 500px;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
