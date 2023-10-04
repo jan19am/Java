@@ -1,0 +1,119 @@
+.index-wrapper {
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.index-title {
+	display: flex;
+	justify-content: center;
+}
+
+.registration, .log_in {
+	border: 2px solid black;
+}
+
+.index-title, .index-body {
+	width: 600px;
+}
+
+.form-rows {
+	width: 594px;
+	display: flex;
+	justify-content: center;
+	border: 2px solid black;
+}
+
+.index-header {
+	display: flex;
+	justify-content: center;
+}
+
+.labelgroup, .inputs {
+	width: 300px;
+}
+
+.inputs {
+	padding: 10px;
+}
+
+.labelgroup {
+	border-right: 2px solid black;
+}
+
+.log_in {
+	margin-top: 30px;
+}
+
+.homebutton {
+	background-color: white;
+	border: 1px solid;
+	box-shadow: 3px 3px;
+	width: 595px;
+}
+
+.sub-button {
+	background-color: white;
+	border: 1px solid;
+	box-shadow: 3px 3px;
+	width: 595px;
+}
+
+.btn_btn-danger {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  font-size: 15px;
+  color: #0000ee;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#tableheader {
+	background-color: #cccccc;
+}
+
+td, th {
+		border: 2px solid black;
+		text-align: center;
+}
+
+tr:nth-child(even) {
+	background-color: #eeeeee;
+}
+
+.team-wrapper {
+	margin: 20px;
+}
+
+.table {
+	width: 600px;
+	margin-bottom: 20px;
+}
+
+.submit {
+	background-color: white;
+	border: 1px solid;
+	box-shadow: 3px 3px;
+	width: 595px;
+}
+
+.wrapper {
+	margin: 20px;
+}
+
+.label-detail {
+	width: 300px;
+}
+
+.input-detail {
+	width: 350px;
+}
+
+.form {
+	width: 594px;
+	display: flex;
+	justify-content: center;
+	border: 2px solid black;
+}

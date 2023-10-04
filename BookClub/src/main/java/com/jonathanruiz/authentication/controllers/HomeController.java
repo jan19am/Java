@@ -34,44 +34,48 @@ public class HomeController {
 	     return "index.jsp";
 	 }
 	 
+	// TO-DO Later -- call a register method in the service 
+    // to do some extra validations and create a new user!
+	// Be sure to send in the empty LoginUser before 
+    // re-rendering the page. 
+	 
+	// No errors! 
+    // TO-DO Later: Store their ID from the DB in session, 
+    // in other words, log them in.
+	 
 	 @PostMapping("/register")
 	 public String register(@Valid @ModelAttribute("newUser") User newUser, 
 	         BindingResult result, Model model, HttpSession session) {
-	     
-	     // TO-DO Later -- call a register method in the service 
-	     // to do some extra validations and create a new user!
+		 
 	     User validated = userServ.register(newUser, result);
 	     
 	     if(result.hasErrors() || validated == null) {
-	         // Be sure to send in the empty LoginUser before 
-	         // re-rendering the page. 
+	    	 
 	         model.addAttribute("newLogin", new LoginUser());
 	         return "index.jsp";
 	     }
 	     
-	     // No errors! 
-	     // TO-DO Later: Store their ID from the DB in session, 
-	     // in other words, log them in.
 	     userServ.create(validated);
 	     session.setAttribute("userId", validated.getId());
 	     return "redirect:/";
 	 }
 	 
+	 // Add once service is implemented:
+	 // No errors!
+	 // TO-DO Later: Store their ID from the DB in session, 
+	 // in other words, log them in.
+	 
 	 @PostMapping("/login")
 	 public String login(@Valid @ModelAttribute("newLogin") LoginUser newLogin, 
 	         BindingResult result, Model model, HttpSession session) {
 	     
-	     // Add once service is implemented:
 	      User user = userServ.login(newLogin, result);
 	 
 	     if(result.hasErrors() || user == null) {
 	         model.addAttribute("newUser", new User());
 	         return "index.jsp";
 	     }
-	     // No errors! 
-	     // TO-DO Later: Store their ID from the DB in session, 
-	     // in other words, log them in.
-	 
+	    
 	     session.setAttribute("userId", user.getId());
 	     return "redirect:/books";
 	 }

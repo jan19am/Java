@@ -42,17 +42,6 @@ public class Book {
 	
 	public Book() {}
 
-	public Book(
-			@NotEmpty(message = "Title must not be blank") @Size(min = 3, max = 128, message = "Title must be between 3 and 128 characters") String title,
-			@NotEmpty(message = "Author must not be blank") @Size(min = 3, max = 30, message = "Author must be between 3 and 30 characters") String author,
-			String myThoughts, User user) {
-		super();
-		this.title = title;
-		this.author = author;
-		this.myThoughts = myThoughts;
-		this.user = user;
-	}
-
 	public Long getId() {
 		return id;
 	}

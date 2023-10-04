@@ -51,21 +51,6 @@ public class User {
   
     public User() {}
 
-	public User(
-			@NotEmpty(message = "Username is required!") @Size(min = 3, max = 30, message = "Username must be between 3 and 30 characters") String userName,
-			@NotEmpty(message = "Email is required!") @Email(message = "Please enter a valid email!") String email,
-			@NotEmpty(message = "Password is required!") @Size(min = 8, max = 128, message = "Password must be between 8 and 128 characters") String password,
-			@NotEmpty(message = "Confirm Password is required!") @Size(min = 8, max = 128, message = "Confirm Password must be between 8 and 128 characters") String confirm,
-			List<Book> books) {
-		super();
-		this.userName = userName;
-		this.email = email;
-		this.password = password;
-		this.confirm = confirm;
-		this.books = books;
-	}
-
-
 
 	// TODO - Don't forget to generate getters and setters
 	public Long getId() {

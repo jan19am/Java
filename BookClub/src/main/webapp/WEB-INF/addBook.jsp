@@ -27,7 +27,7 @@
 		</div>
 		<div class="addbook-body">
 			<form:form action="/books/create" method="POST" modelAttribute="book">
-				<form:input type="hidden" path="user" value="${userId}" />
+				
 				<div class="form-rows">
 					<form:errors path="title" class="text-danger" />
 					<form:label path="title" class="labelgroup">Title</form:label>
@@ -44,6 +44,11 @@
 					<form:errors path="myThoughts" class="text-danger" />
 					<form:label path="myThoughts" class="labelgroup">My Thoughts</form:label>
 					<form:textarea path="myThoughts" class="inputs-textarea"></form:textarea>
+				</div>
+				
+				<div class="form-row">
+					<form:errors path="user" class="error"/>
+					<form:input type="hidden" path="user" value="${user.id}" class="form-control"/>
 				</div>
 
 				<div class="addbook-button">

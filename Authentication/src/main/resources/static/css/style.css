@@ -1,0 +1,16 @@
+h1 {
+	color: purple;
+}
+
+.body {
+	display: flex;
+	justify-content: center;
+}
+
+.registration {
+	margin-right: 50px;
+}
+
+.labelgroup {
+	width: 100px;
+}
